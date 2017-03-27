@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProgressLibrary</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="btn_progress_flower">Flower Progress</string>
+    <string name="btn_progress_pie">Pie Progress</string>
+    <string name="btn_progress_custom">Custom Progress</string>
+</resources>
