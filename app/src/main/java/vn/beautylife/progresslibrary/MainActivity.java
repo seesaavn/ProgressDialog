@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 .speed(9)// frames count in each second; default = 9f
                 .build();
 
-        // dialog has almost attrs like normal dialog of android system
+        // dialog has almost attrs like normal dialog, maybe we need to custom bg alpha of this dialog
         dialog.setCanceledOnTouchOutside(true);
         dialog.show();
     }
@@ -114,9 +114,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showCustomProgress() {
+        final Integer[] seriesImg = new Integer[] {
+                R.drawable.ic_heart_0, R.drawable.ic_heart_25, R.drawable.ic_heart_50,
+                R.drawable.ic_heart_75, R.drawable.ic_heart_100};
         ACProgressCustom dialog = new ACProgressCustom.Builder(this)
-                .useImages(R.drawable.p0, R.drawable.p1, R.drawable.p2, R.drawable.p3)
+                .useImages(seriesImg)
+                .speed(5f)// default = 6.67f
                 .build();
+        dialog.setCanceledOnTouchOutside(true);
         dialog.show();
     }
 
