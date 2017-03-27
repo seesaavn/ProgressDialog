@@ -60,6 +60,12 @@ public class ACProgressActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public boolean onNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
     private void setupViews() {
         setupToolbar();
         setupButtonViews();
