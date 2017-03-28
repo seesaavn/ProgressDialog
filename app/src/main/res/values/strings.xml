@@ -15,4 +15,9 @@
     <string name="geometric_type_triangle">Triangle (3 angles - tam giác)</string>
     <string name="geometric_type_kite">Kite (4 angles - Cánh diều)</string>
 
+    <!-- Default Android Progress -->
+    <string name="default_progress_title">Android Default Progress</string>
+    <string name="btn_default_progress">Default Android Progress</string>
+    <string name="btn_show_progress">Show simple progress</string>
+
 </resources>

@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import vn.beautylife.progresslibrary.android.DefaultProgressActivity;
 
 /**
  * Created by vuhongky on 3/27/17.
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     AppCompatButton btnAcProgressLib;
     @BindView(R.id.btn_lib_geometric_progress)
     AppCompatButton btnGeometricProgressLib;
+    @BindView(R.id.btn_default_progress)
+    AppCompatButton btnDefaultProgress;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
         RxView.clicks(btnGeometricProgressLib)
                 .throttleFirst(1000, TimeUnit.MILLISECONDS)
                 .subscribe(aVoid -> moveToGeometricProgress());
+        RxView.clicks(btnDefaultProgress)
+                .throttleFirst(1000, TimeUnit.MILLISECONDS)
+                .subscribe(aVoid -> moveToDefaultProgress());
     }
 
     private void moveToACProgress() {
@@ -53,6 +59,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void moveToGeometricProgress() {
         Intent intent = GeometricProgressActivity.createIntent(this);
+        startActivity(intent);
+    }
+
+    private void moveToDefaultProgress() {
+        Intent intent = DefaultProgressActivity.createIntent(this);
         startActivity(intent);
     }
 

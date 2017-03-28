@@ -29,6 +29,10 @@
             android:name=".GeometricProgressActivity"
             android:label="@string/geometric_progress_title" />
 
+        <activity
+            android:name=".android.DefaultProgressActivity"
+            android:label="@string/default_progress_title" />
+
     </application>
 
 </manifest>
