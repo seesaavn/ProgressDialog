@@ -29,7 +29,7 @@ public class GeometricProgressActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onNavigateUp() {
+    public boolean onSupportNavigateUp() {
         onBackPressed();
         return true;
     }
