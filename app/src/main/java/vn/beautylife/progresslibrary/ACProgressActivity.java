@@ -1,5 +1,6 @@
 package vn.beautylife.progresslibrary;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -7,6 +8,8 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.jakewharton.rxbinding.view.RxView;
 
@@ -92,6 +95,7 @@ public class ACProgressActivity extends AppCompatActivity {
 
         // dialog has almost attrs like normal dialog, maybe we need to custom bg alpha of this dialog
         dialog.setCanceledOnTouchOutside(true);
+        setDialogDim(dialog);
         dialog.show();
     }
 
@@ -114,7 +118,17 @@ public class ACProgressActivity extends AppCompatActivity {
                 .speed(5f)// default = 6.67f
                 .build();
         dialog.setCanceledOnTouchOutside(true);
+        setDialogDim(dialog);
         dialog.show();
+    }
+
+    private void setDialogDim(Dialog dialog) {
+        Window window = dialog.getWindow();
+        if (window != null) {
+            // window.setBackgroundDrawableResource(android.R.color.white);
+            window.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+            //window.setDimAmount(0.2f); // range = 0 -> 1
+        }
     }
 
 }
