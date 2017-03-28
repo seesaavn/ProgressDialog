@@ -23,7 +23,11 @@
         <activity
             android:name=".ACProgressActivity"
             android:label="@string/ac_progress_title"
-            android:theme="@style/AppTheme.NoActionBar" />
+            />
+
+        <activity
+            android:name=".GeometricProgressActivity"
+            android:label="@string/geometric_progress_title" />
 
     </application>
 

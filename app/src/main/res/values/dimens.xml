@@ -1,3 +1,14 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="padding_big">50dp</dimen>
+    <dimen name="padding_medium">30dp</dimen>
+    <dimen name="margin_hor">15dp</dimen>
+    <dimen name="margin_ver_big">50dp</dimen>
+    <dimen name="margin_ver_medium">30dp</dimen>
+    <dimen name="margin_ver_small">20dp</dimen>
+
+    <dimen name="text_15">15sp</dimen>
+    <dimen name="text_17">17sp</dimen>
+    <dimen name="text_20">20sp</dimen>
 </resources>

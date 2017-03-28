@@ -2,9 +2,17 @@
     <string name="app_name">ProgressLibrary</string>
     <string name="action_settings">Settings</string>
 
-    <string name="ac_progress_title">Ac Progress Lib</string>
+    <!-- Ac Progress -->
+    <string name="ac_progress_title">Ac Lib (ProgressDialog)</string>
     <string name="btn_ac_progress_lib">AC Progress</string>
     <string name="btn_progress_flower">Flower Progress</string>
     <string name="btn_progress_pie">Pie Progress</string>
-    <string name="btn_progress_custom">Custom Progress</string>
+    <string name="btn_progress_custom">Custom Progress</string>progress
+
+    <!-- Geometric progress -->
+    <string name="geometric_progress_title">Geometric Lib (ProgressView)</string>
+    <string name="btn_geometric_progress">Geometric Progress</string>
+    <string name="geometric_type_triangle">Triangle (3 angles - tam giác)</string>
+    <string name="geometric_type_kite">Kite (4 angles - Cánh diều)</string>
+
 </resources>

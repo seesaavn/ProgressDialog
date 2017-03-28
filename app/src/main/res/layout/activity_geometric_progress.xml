@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/padding_medium"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_ver_medium"
+        android:text="@string/geometric_type_triangle"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_17"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <net.bohush.geometricprogressview.GeometricProgressView
+            android:id="@+id/progress_triangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:gp_type="triangle"
+            app:gp_number_of_angles="25"
+            app:gp_color="@android:color/black"
+            app:gp_duration="800"
+            app:gp_figure_padding="3dp"
+            />
+
+        <net.bohush.geometricprogressview.GeometricProgressView
+            android:id="@+id/progress_triangle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_hor"
+            android:layout_marginLeft="@dimen/margin_hor"
+            app:gp_type="triangle"
+            app:gp_number_of_angles="10"
+            app:gp_color="@android:color/black"
+            app:gp_duration="800"
+            app:gp_figure_padding="3dp"
+            />
+
+        <net.bohush.geometricprogressview.GeometricProgressView
+            android:id="@+id/progress_triangle_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_hor"
+            android:layout_marginLeft="@dimen/margin_hor"
+            app:gp_type="triangle"
+            app:gp_number_of_angles="4"
+            app:gp_color="@android:color/black"
+            app:gp_duration="800"
+            app:gp_figure_padding="3dp"
+            />
+
+        <net.bohush.geometricprogressview.GeometricProgressView
+            android:id="@+id/progress_triangle_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_hor"
+            android:layout_marginLeft="@dimen/margin_hor"
+            app:gp_type="triangle"
+            app:gp_number_of_angles="3"
+            app:gp_color="@android:color/black"
+            app:gp_duration="800"
+            app:gp_figure_padding="3dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_ver_medium"
+        android:layout_marginBottom="@dimen/margin_ver_medium"
+        android:background="@android:color/darker_gray"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_ver_medium"
+        android:text="@string/geometric_type_kite"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_17"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <net.bohush.geometricprogressview.GeometricProgressView
+            android:id="@+id/progress_kite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:gp_type="kite"
+            app:gp_number_of_angles="15"
+            app:gp_color="@android:color/black"
+            app:gp_duration="800"
+            app:gp_figure_padding="3dp"
+            />
+
+        <net.bohush.geometricprogressview.GeometricProgressView
+            android:id="@+id/progress_kite_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_hor"
+            android:layout_marginLeft="@dimen/margin_hor"
+            app:gp_type="kite"
+            app:gp_number_of_angles="10"
+            app:gp_color="@android:color/black"
+            app:gp_duration="800"
+            app:gp_figure_padding="3dp"
+            />
+
+        <net.bohush.geometricprogressview.GeometricProgressView
+            android:id="@+id/progress_kite_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_hor"
+            android:layout_marginLeft="@dimen/margin_hor"
+            app:gp_type="kite"
+            app:gp_number_of_angles="4"
+            app:gp_color="@android:color/black"
+            app:gp_duration="800"
+            app:gp_figure_padding="3dp"
+            />
+
+        <net.bohush.geometricprogressview.GeometricProgressView
+            android:id="@+id/progress_kite_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_hor"
+            android:layout_marginLeft="@dimen/margin_hor"
+            app:gp_type="kite"
+            app:gp_number_of_angles="3"
+            app:gp_color="@android:color/black"
+            app:gp_duration="800"
+            app:gp_figure_padding="3dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

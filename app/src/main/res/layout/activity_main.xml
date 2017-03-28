@@ -11,8 +11,18 @@
         android:id="@+id/btn_acprogress_lib"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="30dp"
         android:layout_marginTop="30dp"
         android:text="@string/btn_ac_progress_lib"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_lib_geometric_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/btn_geometric_progress"
         />
 
 </LinearLayout>
