@@ -77,8 +77,8 @@ public class ACProgressActivity extends AppCompatActivity {
     private void showFlowerProgress() {
         ACProgressFlower dialog = new ACProgressFlower.Builder(this)
                 .sizeRatio(0.08f) // ratio of bgSize/smaller edge of device; default = 0.25f, max = 1
-//                .bgColor(Color.TRANSPARENT)
-//                .bgAlpha(0.0f)
+                .bgColor(Color.TRANSPARENT)
+                .bgAlpha(0.0f)
 
 //                .petalCount(4)// default = 12
                 .petalThickness(5)// default = 9
