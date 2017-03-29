@@ -111,8 +111,8 @@ public class ACProgressActivity extends AppCompatActivity {
 
     private void showCustomProgress() {
         final Integer[] seriesImg = new Integer[] {
-                R.drawable.ic_heart_0, R.drawable.ic_heart_25, R.drawable.ic_heart_50,
-                R.drawable.ic_heart_75, R.drawable.ic_heart_100};
+                R.drawable.p1, R.drawable.p2, R.drawable.p3, R.drawable.p4,
+                R.drawable.p5, R.drawable.p6, R.drawable.p7, R.drawable.p8};
         ACProgressCustom dialog = new ACProgressCustom.Builder(this)
                 .useImages(seriesImg)
                 .speed(5f)// default = 6.67f
